@@ -1,0 +1,1 @@
+import { compareVersion } from '../src/index';
