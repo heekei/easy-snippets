@@ -1,3 +1,1 @@
-import compareVersion from './compareVersion';
-export default compareVersion; 
-
+module.exports.compareVersion = require('./compareVersion');
