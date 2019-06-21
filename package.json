@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-    "test": "mocha ./test/**/*.js"
+    "build": "rm -rf dist/ && webpack --mode production",
+    "test": "mocha ./test/**/*.test.js -R markdown > spec.md"
   },
   "author": "heekei",
   "license": "ISC",

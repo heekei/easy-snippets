@@ -1,5 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
+console.log(process.env.NODE_ENV);
+
 module.exports = {
   node: {},
   entry: './src/index.js',
@@ -9,6 +12,9 @@ module.exports = {
     libraryTarget: 'umd',
     library: 'easySnippets',
     globalObject: 'this',
+  },
+  optimization: {
+    minimize: true
   },
   devtool: 'source-map',
   module: {
