@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
-console.log(process.env.NODE_ENV);
 
 module.exports = {
   node: {},
@@ -13,10 +12,6 @@ module.exports = {
     library: 'easySnippets',
     globalObject: 'this',
   },
-  optimization: {
-    minimize: true
-  },
-  devtool: 'source-map',
   module: {
     rules: [
       {
