@@ -1,10 +1,11 @@
 language: node_js
+node_js: "10.15.0"
 
 branches:
   only:
   - master
 
-before_install: nvm use --lts
+# before_install: nvm use --lts
 
 install: yarn
 
