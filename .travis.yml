@@ -4,6 +4,8 @@ branches:
   only:
   - master
 
+before_install: nvm use --lts
+
 install: yarn
 
 before_script: yarn test
